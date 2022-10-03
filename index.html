@@ -5,18 +5,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="mdb.min.css"/>
     </head>
     <body>
-        <div class="container-fluid" style="background-color: black">
-            <div class="row" style="min-height: 200px; padding: 10px 10px 10px 10px">
-                <div class="col-md-2" style="background-color: aqua; padding-right: 10px"></div>
-                <div class="col-md-4" style="background-color: blue; padding-right: 10px"></div>
-                <div class="col-md-6 bg-danger"></div>
-            </div>
-            <div class="row" style="min-height: 300px; padding: 0px 10px 10px 10px ">
-                <div class="col-md-4" style="background-color: green"></div>
-                <div class="col-md-8 bg-success"></div>
-            </div>
-        </div>
+		<section class="">
+			<div class="container-fluid row-content">
+				<div class="col-md-10" style="background-color: gray">
+					<div class="row mb-4" style="min-height: 300px">
+						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
+							<img class="img-fluid m-auto d-block" src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
+							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal1">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+							</a>
+						</div>
+						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
+							<img class="img-fluid m-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/4/42/MOABAFAM.JPG"/>
+							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal2">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+							</a>
+						</div>
+						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
+							<img class="img-fluid m-auto d-block" src="https://file.kelleybluebookimages.com/kbb/base/house/2018/2018-Jeep-Wrangler%20Unlimited-FrontSide_JEWRULM1801_640x480.jpg"/>
+							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal3">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+							</a>
+						</div>
+					</div>
+					<div class="row mb-4 bg-dark" style="min-height: 300px">
+						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
+							<img class="img-fluid m-auto d-block" src="https://static.wikia.nocookie.net/b__/images/d/de/500-SniperMonkey.png/revision/latest?cb=20190522023539&path-prefix=bloons"/>
+							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal4">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+							</a>
+						</div>
+						<div class="col-md-8 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
+							<img class="img-fluid m-auto d-block" src="https://static.wikia.nocookie.net/b__/images/3/34/MOAB_2.png/revision/latest?cb=20180908035141&path-prefix=bloons"/>
+							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal5">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 sidenav" style="background-color: gray">
+					<h1 style="padding-top: 30px">ImageViewer</h1>
+					<br/>
+					<h3>MOABS</h3>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div
+			  class="modal fade"
+			  id="imgModal1"
+			  tabindex="-1"
+			  aria-labelledby="Image 1"
+			  aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+				  <div class="ratio ratio-16x9">
+					<img src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
+				  </div>
+				  <div class="text-center py-3">
+					<button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+					  Close
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</section>
     </body>
 </html>
