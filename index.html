@@ -3,75 +3,153 @@
     <head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="mdb.min.css"/>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('[data-bs-toggle="tooltip"]').tooltip();
+			});
+		</script>
     </head>
     <body>
 		<section class="">
-			<div class="container-fluid row-content">
-				<div class="col-md-10" style="background-color: gray">
-					<div class="row mb-4" style="min-height: 300px">
-						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
-							<img class="img-fluid m-auto d-block" src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
-							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal1">
-								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-							</a>
+			<div class="row container-fluid">
+				<!-- Gallery -->
+				<div class="col-md-10 bg-dark" style="padding-top: 30px">
+					<div class="row" style="min-height: 300px">
+						<div class="col-md-4 mb-4">
+							<button type="button" class="hover-overlay ripple rounded w-100 h-100 m-auto d-block" data-bs-toggle="modal" data-bs-target="#modal1" style="border-width: 0px; padding: 10px">
+								<img class="w-100 h-100 m-auto d-block rounded" src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
+							</button>
 						</div>
-						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
-							<img class="img-fluid m-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/4/42/MOABAFAM.JPG"/>
-							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal2">
-								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-							</a>
+						<div class="col-md-4 mb-4">
+							<button type="button" class="hover-overlay ripple rounded w-100 h-100 m-auto d-block" data-bs-toggle="modal" data-bs-target="#modal2" style="border-width: 0px; padding: 10px">
+								<img class="w-100 h-100 m-auto d-block rounded" src="https://upload.wikimedia.org/wikipedia/commons/4/42/MOABAFAM.JPG"/>
+							</button>
 						</div>
-						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
-							<img class="img-fluid m-auto d-block" src="https://file.kelleybluebookimages.com/kbb/base/house/2018/2018-Jeep-Wrangler%20Unlimited-FrontSide_JEWRULM1801_640x480.jpg"/>
-							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal3">
-								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-							</a>
+						<div class="col-md-4 mb-4">
+							<button type="button" class="hover-overlay ripple rounded w-100 h-100 m-auto d-block" data-bs-toggle="modal" data-bs-target="#modal3" style="border-width: 0px; padding: 10px">
+								<img class="w-100 h-100 m-auto d-block rounded" src="https://file.kelleybluebookimages.com/kbb/base/house/2018/2018-Jeep-Wrangler%20Unlimited-FrontSide_JEWRULM1801_640x480.jpg"/>
+							</button>
 						</div>
 					</div>
-					<div class="row mb-4 bg-dark" style="min-height: 300px">
-						<div class="col-md-4 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
-							<img class="img-fluid m-auto d-block" src="https://static.wikia.nocookie.net/b__/images/d/de/500-SniperMonkey.png/revision/latest?cb=20190522023539&path-prefix=bloons"/>
-							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal4">
-								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-							</a>
+					<div class="row bg-dark" style="min-height: 300px">
+						<div class="col-md-5 mb-4">
+							<button type="button" class="hover-overlay ripple rounded w-100 h-100 m-auto d-block" data-bs-toggle="modal" data-bs-target="#modal4" style="border-width: 0px; padding: 10px">
+								<img class="w-100 h-100 m-auto d-block rounded" src="https://static.wikia.nocookie.net/b__/images/d/de/500-SniperMonkey.png/revision/latest?cb=20190522023539&path-prefix=bloons"/>
+							</button>
 						</div>
-						<div class="col-md-8 mb-4 bg-dark bg-image hover-overlay ripple" data-ripple-color="light">
-							<img class="img-fluid m-auto d-block" src="https://static.wikia.nocookie.net/b__/images/3/34/MOAB_2.png/revision/latest?cb=20180908035141&path-prefix=bloons"/>
-							<a href="#!" data-mdb-toggle="modal" data-mdb-target="#imgModal5">
-								<div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-							</a>
+						<div class="col-md-7 mb-4">
+							<button type="button" class="hover-overlay ripple rounded w-100 h-100 m-auto d-block" data-bs-toggle="modal" data-bs-target="#modal5" style="border-width: 0px; padding: 10px">
+								<img class="w-100 h-100 m-auto d-block rounded" src="https://static.wikia.nocookie.net/b__/images/3/34/MOAB_2.png/revision/latest?cb=20180908035141&path-prefix=bloons"/>
+							</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2 sidenav" style="background-color: gray">
-					<h1 style="padding-top: 30px">ImageViewer</h1>
+				<!-- Sidebar -->
+				<div class="col-md-2 bg-primary" style="align-items: stretch">
+					<h1 class="text-light" style="padding-top: 30px">MOABs</h1>
 					<br/>
-					<h3>MOABS</h3>
+					<h4 class="text-light">according to all known laws of aviation, this is every moab</h3>
+					<br/>
+					<a class="text-light" href="index.html">HOME</a>
+					<br/>
+					<a class="text-light" href="index.html">GALLERY</a>
+					<br/>
+					<a class="text-light" href="bio.html">BIO</a>
+					<br/>
+					<a class="text-light" href="blog.html">BLOG</a>
+					<br/>
+					<a class="text-light" href="contact.html">CONTACT</a>
+					<br/>
+					<div class="row" style="padding-top: 30px">
+						<div data-bs-toggle="tooltip" data-bs-placement="bottom" title="facebook" class="col-md-4">
+							<a href="https://www.facebook.com">
+								<img class="w-100" src="https://cdn-icons-png.flaticon.com/512/59/59439.png"/>
+							</a>
+						</div>
+						<div data-bs-toggle="tooltip" data-bs-placement="bottom" title="twitter" class="col-md-4">
+							<a href="https://www.twitter.com">
+								<img class="w-100" src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"/>
+							</a>
+						</div>
+						<div class="col-md-4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="instagram">
+							<a href="https://www.instagram.com">
+								<img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"/>
+							</a>
+						</div>
+					</div>
+					<br/>
 				</div>
 			</div>
 		</section>
+		<!-- Modals -->
 		<section class="">
-			<div
-			  class="modal fade"
-			  id="imgModal1"
-			  tabindex="-1"
-			  aria-labelledby="Image 1"
-			  aria-hidden="true">
-			  <div class="modal-dialog modal-lg">
-				<div class="modal-content">
-				  <div class="ratio ratio-16x9">
-					<img src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
-				  </div>
-				  <div class="text-center py-3">
-					<button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
-					  Close
-					</button>
-				  </div>
+			<div class="modal fade" id="modal1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Moab, UT</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<img class="w-100 h-100 m-auto d-block rounded" src="https://www.discovermoab.com/wp-content/uploads/2017/07/discover-dead-horse.jpg"/>
+						</div>
+					</div>
 				</div>
-			  </div>
+			</div>
+			<div class="modal fade" id="modal2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Mother of All Bombs</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<img class="w-100 h-100 m-auto d-block rounded" src="https://upload.wikimedia.org/wikipedia/commons/4/42/MOABAFAM.JPG"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modal3">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Jeep Wrangler Moab Edition</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<img class="w-100 h-100 m-auto d-block rounded" src="https://file.kelleybluebookimages.com/kbb/base/house/2018/2018-Jeep-Wrangler%20Unlimited-FrontSide_JEWRULM1801_640x480.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modal4">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Bloons Tower Defense 6 Cripple MOAB</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<img class="w-100 h-100 m-auto d-block rounded" src="https://static.wikia.nocookie.net/b__/images/d/de/500-SniperMonkey.png/revision/latest?cb=20190522023539&path-prefix=bloons"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modal5">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Massive Ornary Air Blimp</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<img class="w-100 h-100 m-auto d-block rounded" src="https://static.wikia.nocookie.net/b__/images/3/34/MOAB_2.png/revision/latest?cb=20180908035141&path-prefix=bloons"/>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
     </body>
